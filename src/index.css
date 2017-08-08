@@ -31,12 +31,15 @@ body {
 .navbar-inverse .navbar-brand {
     color: #fff;
 }
+.navbar-header{
+	margin-bottom: 10px;
+}
 img {
-    height: 165%;
+    
     margin-bottom: 6px;
     padding-bottom: 4px;
     vertical-align: middle;
-    width: 131%;
+   
 }
 .panel-footer {
     background-color: none;

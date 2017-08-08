@@ -312,9 +312,9 @@ function sendDataToServer(survey) {
   //document.querySelector('#surveyResult').innerHTML = "Gracias por responder la encuesta.";//"result: " + JSON.stringify(survey.data);
   var result = JSON.stringify(survey.data);
   var answer = JSON.parse(result);
-  alert(answer.nombre + " " + answer.email);
+  /*alert(answer.nombre + " " + answer.email);
   alert(result); //send Ajax request to your web server.
-  alert(answer);
+  alert(answer);*/
   var today = new Date();
   var dd = today.getDate();
   var mm = today.getMonth()+1; //January is 0!
@@ -365,7 +365,7 @@ function sendDataToServer(survey) {
       success: function(data) {
         /*self.props.handleAdd(data);
         self.setState(self.getInitialState);*/
-        alert("jeje");
+        //alert("jeje");
       },
       error: function(xhr, status, error) {
         alert('Cannot add a new record: ', error);
