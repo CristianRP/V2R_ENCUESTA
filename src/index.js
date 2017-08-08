@@ -7,7 +7,7 @@ import * as Survey from 'survey-react';
 import $ from 'jquery';
 
 Survey.defaultBootstrapMaterialCss.navigationButton = "btn btn-green";
-Survey.Survey.cssType = "bootstrap";
+Survey.Survey.cssType = "bootstrapmaterial";
 
 var surveyJSON = {
  locale: "es",
