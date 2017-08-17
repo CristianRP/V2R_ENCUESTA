@@ -26,15 +26,17 @@ var surveyJSON = {
         {
          type: "text",
          name: "nombre",
+         placeHolder: "Nombre",
          title: {
-          default: "Ingresa tu nombre",
-          es: "Nombres:"
+          default: "",
+          es: ""
          },
          isRequired: true
         },
         {
          type: "text",
          name: "apellidos",
+         placeHolder: "Apellidos",
          title: {
           es: "Apellidos"
          }
@@ -52,6 +54,7 @@ var surveyJSON = {
           titleName: "descripcion"
          },
          name: "estado_civil",
+         placeHolder: "Estado Civil",
          startWithNewLine: false,
          title: {
           es: "Estado civil"
@@ -60,6 +63,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "email",
+         placeHolder: "Email",
          title: {
           es: "Email"
          },
@@ -68,6 +72,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "telefono",
+         placeHolder: "Teléfono",
          startWithNewLine: false,
          title: {
           default: "Ingresa tu número de teléfono ",
@@ -87,6 +92,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "nombre_conyuge",
+         placeHolder: "Nombre conyuge",
          title: {
           es: "Nombre"
          }
@@ -94,6 +100,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "email_conyuge",
+         placeHolder: "Email conyuge",
          title: {
           es: "Email"
          },
@@ -102,6 +109,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "telefono_conyuge",
+         placeHolder: "Teléfono conyuge",
          startWithNewLine: false,
          title: {
           es: "Teléfono:"
@@ -122,6 +130,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "residencia",
+         placeHolder: "Residencia",
          title: {
           es: "Dirección"
          }
@@ -129,6 +138,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "zona",
+         placeHolder: "Zona",
          title: {
           es: "Zona"
          }
@@ -136,6 +146,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "adultos",
+         placeHolder: "Adultos",
          startWithNewLine: false,
          title: {
           es: "Adultos que integran la familia"
@@ -145,6 +156,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "ninos",
+         placeHolder: "Niños",
          startWithNewLine: false,
          title: {
           es: "Niños que integran la familia"
@@ -164,6 +176,7 @@ var surveyJSON = {
           titleName: "descripcion"
          },
          name: "municipio",
+         placeHolder: "Municipio",
          title: {
           es: "Selecciona el municipio"
          }
@@ -195,6 +208,7 @@ var surveyJSON = {
           {
            type: "text",
            name: "ingreso",
+           placeHolder: "Ingreso",
            startWithNewLine: false,
            title: {
             es: "Ingresos mensuales"
@@ -214,6 +228,7 @@ var surveyJSON = {
             titleName: "descripcion"
            },
            name: "profesion",
+           placeHolder: "Profesión",
            title: {
             es: "Profesión"
            }
@@ -233,6 +248,7 @@ var surveyJSON = {
           {
            type: "text",
            name: "lugar_trabajo",
+           placeHolder: "Lugar de trabajo",
            title: {
             es: "Lugar de trabajo"
            }
@@ -260,6 +276,7 @@ var surveyJSON = {
         titleName: "descripcion"
        },
        name: "como_se_entero",
+       placeHolder: "¿ Como se enteró ?",
        title: {
         es: "Como se enteró?"
        }
@@ -273,6 +290,7 @@ var surveyJSON = {
        },
        isRequired: true,
        name: "proyecto",
+       placeHolder: "Proyecto",
        title: "Proyecto"
       },
       {
@@ -293,6 +311,7 @@ var surveyJSON = {
       {
        type: "comment",
        name: "observaciones",
+       placeHolder: "observaciones",
        title: {
         es: "Oberservaciones"
        }

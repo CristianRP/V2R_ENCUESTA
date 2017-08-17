@@ -1,8 +1,10 @@
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #64a845;
+  background-color: #333f49;
   color: white;
 }
 
@@ -11,6 +13,11 @@ body {
     font-family: Helvetica;
     color: white;
 }
+
+.form-group .form-control {
+    margin-bottom: 7px;
+    background-color: #fff;
+}
 .form-control{
 	background-color: #dce8d6;
 	border: 2px solid #dce8d6;
@@ -18,7 +25,7 @@ body {
 	font-size: 10px;
 }
 .sv_complete_btn {
-    background-color: #fff;
+    background-color: #5b8f22;
     border-radius: 10px;
 }
 
@@ -34,12 +41,25 @@ body {
 .navbar-header{
 	margin-bottom: 10px;
 }
+.logo img{
+
+   display: block;
+  margin: 0 auto;
+}
 img {
     
     margin-bottom: 6px;
     padding-bottom: 4px;
     vertical-align: middle;
    
+}
+#sq_112i .select{
+     border: 1px solid #ccc;
+ background: URL(/images/.png) no-repeat 298px 3px #fff !important;
+ -moz-appearance: none;
+ -webkit-appearance: none;
+ appearance: none;
+
 }
 .panel-footer {
     background-color: none;
@@ -108,5 +128,29 @@ img {
 	background: none;
 }
 #surveyContainer {
-    margin-top: 70px;
+    margin-top: 0px;
+}
+
+.btn.btn-green.sv_complete_btn{
+
+    color:white;
+    width: 10%;
+    height: 55px;
+    font-weight: bold;
+  
+
+}
+
+#sq_100i input{
+    font-family: FontAwesome;
+   content: "\f007";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   
+}
+
+.panel-footer{
+
+     text-align:center; 
 }
