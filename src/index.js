@@ -26,21 +26,40 @@ var surveyJSON = {
         {
          type: "text",
          name: "nombre",
-         placeHolder: "Nombre",
-         title: {
-          default: "",
-          es: ""
-         },
-         isRequired: true
+         placeHolder:"\uf007 Nombre",
+         isRequired: true,
+
+       },
+       {
+        type: "text",
+        name: "email",
+        placeHolder: "\uf003 Email",
+        startWithNewLine: false,
+        title: {
+         es: "Email"
         },
+        inputType: "email"
+       },
         {
          type: "text",
          name: "apellidos",
-         placeHolder: "Apellidos",
+         placeHolder: "\uf007 Apellidos",
+
          title: {
           es: "Apellidos"
          }
         },
+        {
+         type: "text",
+         name: "telefono",
+         placeHolder: "\uf10b Teléfono",
+         startWithNewLine: false,
+         title: {
+          default: "Ingresa tu número de teléfono ",
+          es: "Teléfono"
+         },
+         inputType: "tel"
+       },
         {
          type: "dropdown",
          choices: [
@@ -54,32 +73,13 @@ var surveyJSON = {
           titleName: "descripcion"
          },
          name: "estado_civil",
-         placeHolder: "Estado Civil",
-         startWithNewLine: false,
+         optionsCaption: "\uf007 Estado Civil",
          title: {
-          es: "Estado civil"
+          es: ""
          }
         },
-        {
-         type: "text",
-         name: "email",
-         placeHolder: "Email",
-         title: {
-          es: "Email"
-         },
-         inputType: "email"
-        },
-        {
-         type: "text",
-         name: "telefono",
-         placeHolder: "Teléfono",
-         startWithNewLine: false,
-         title: {
-          default: "Ingresa tu número de teléfono ",
-          es: "Teléfono"
-         },
-         inputType: "tel"
-        }
+
+
        ],
        title: {
         es: "Datos Personales:"
@@ -130,36 +130,39 @@ var surveyJSON = {
         {
          type: "text",
          name: "residencia",
-         placeHolder: "Residencia",
+         placeHolder: "Dirección",
+         startWithNewLine: false,
          title: {
           es: "Dirección"
          }
         },
         {
          type: "text",
-         name: "zona",
-         placeHolder: "Zona",
-         title: {
-          es: "Zona"
-         }
-        },
-        {
-         type: "text",
          name: "adultos",
-         placeHolder: "Adultos",
+         placeHolder: "\uf0c0 Adultos que integran la familia",
          startWithNewLine: false,
          title: {
-          es: "Adultos que integran la familia"
+          es: ""
          },
          inputType: "number"
         },
         {
          type: "text",
+         name: "zona",
+         placeHolder: "Zona",
+
+         title: {
+          es: "Zona"
+         }
+        },
+
+        {
+         type: "text",
          name: "ninos",
-         placeHolder: "Niños",
+         placeHolder: "'\uf0c0 Niños que integran la familia",
          startWithNewLine: false,
          title: {
-          es: "Niños que integran la familia"
+          es: ""
          },
          inputType: "number"
         },
@@ -176,14 +179,14 @@ var surveyJSON = {
           titleName: "descripcion"
          },
          name: "municipio",
-         placeHolder: "Municipio",
-         title: {
-          es: "Selecciona el municipio"
+        optionsCaption: "Selecciona el municipio",
+          title: {
+          es: ""
          }
         }
        ],
        title: {
-        es: "Datos Domicilio:"
+        es: "Datos domicilio:"
        }
       },
       {
@@ -201,20 +204,43 @@ var surveyJSON = {
             "Gobierno"
            ],
            name: "sectorTrabajo",
+           optionsCaption: "\uf0f2 Sector",
            title: {
-            es: "Sector"
+            es: ""
+           }
+          },
+          {
+           type: "dropdown",
+           choices: [
+            "Dependiente",
+            "Negocio Propio"
+           ],
+           name: "tipo_relacion",
+           optionsCaption: "\uf0f2 Tipo de relación laboral",
+           startWithNewLine: false,
+           title: {
+            es: ""
            }
           },
           {
            type: "text",
            name: "ingreso",
-           placeHolder: "Ingreso",
-           startWithNewLine: false,
+           placeHolder: "\uf0d6 Ingresos mensuales",
            title: {
-            es: "Ingresos mensuales"
+            es: ""
            },
            inputType: "number"
           },
+          {
+           type: "text",
+           name: "lugar_trabajo",
+           placeHolder: "\uf0f2 Lugar de trabajo",
+
+           startWithNewLine: false,
+           title: {
+            es: ""
+           }
+         },
           {
            type: "dropdown",
            choices: [
@@ -228,39 +254,21 @@ var surveyJSON = {
             titleName: "descripcion"
            },
            name: "profesion",
-           placeHolder: "Profesión",
+           optionsCaption: "\uf0f2 Profesión",
            title: {
-            es: "Profesión"
+            es: ""
            }
           },
-          {
-           type: "dropdown",
-           choices: [
-            "Dependiente",
-            "Negocio Propio"
-           ],
-           name: "tipo_relacion",
-           startWithNewLine: false,
-           title: {
-            es: "Tipo de relación laboral"
-           }
-          },
-          {
-           type: "text",
-           name: "lugar_trabajo",
-           placeHolder: "Lugar de trabajo",
-           title: {
-            es: "Lugar de trabajo"
-           }
-          }
+
+
          ],
          title: {
-          es: "Datos generales de trabajo:"
+          es: "Datos laborales"
          }
         }
        ],
        title: {
-        es: "Trabajo"
+        es: ""
        }
       },
       {
@@ -276,9 +284,10 @@ var surveyJSON = {
         titleName: "descripcion"
        },
        name: "como_se_entero",
-       placeHolder: "¿ Como se enteró ?",
+       optionsCaption: "¿ Como se enteró ?",
+
        title: {
-        es: "Como se enteró?"
+        es: ""
        }
       },
       {
@@ -290,7 +299,8 @@ var surveyJSON = {
        },
        isRequired: true,
        name: "proyecto",
-       placeHolder: "Proyecto",
+       optionsCaption: "Proyecto",
+       startWithNewLine: false,
        title: "Proyecto"
       },
       {
@@ -308,17 +318,26 @@ var surveyJSON = {
        name: "vendedor",
        title: "Selecciona el vendedor"
       },
+
       {
        type: "comment",
        name: "observaciones",
        placeHolder: "observaciones",
+       startWithNewLine: false,
        title: {
-        es: "Oberservaciones"
-       }
-      }
+        es: ""
+      },
+     },
+
+
+
      ],
      title: {
-      es: "Generales"
+      es: "Proyecto"
+    },
+
+     title: {
+      es: "Proyecto"
      }
     }
    ]
