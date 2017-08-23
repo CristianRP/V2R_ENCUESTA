@@ -7,35 +7,396 @@ body {
   background-color: #333f49;
   color: white;
 }
+.wrapper {
+    font-family:'arial', sans-serif;
+}
 
-.navbar.navbar-inverse.navbar-fixed-top {
-    background-color: #296a34;
-    font-family: Helvetica;
-    color: white;
-}
-input {
-  padding:10px;
- 	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
-     font-style: normal;
-     font-weight: normal;
-     text-decoration: inherit;
-}
-.form-control select{
-  font-family: sans-serif;
+
+
+  #sq_103i:-ms-input-placeholder{
   font-size: 16px;
-line-height: inherit;
-    }
+  line-height: 1.42857143;
+  background-image: url("/images/03-TEL.png") !important;
+  background-repeat: no-repeat;
+  background-position: -2.5% 20%;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+#sq_103i:-ms-input-placeholder{
+  font-size: 16px;
+  line-height: 1.42857143;
+  background-image: url("/images/03-TEL.png") !important;
+  background-repeat: no-repeat;
+  background-position: -2.5% 20%;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+ #sq_103i::-webkit-input-placeholder  {
+  font-size: 16px;
+  line-height: 1.42857143;
+  background-image: url("/images/03-TEL.png") !important;
+  background-repeat: no-repeat;
+  background-position: -2.5% 20%;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+#sq_102i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/01-PERSONA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_102i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/01-PERSONA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_102i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/01-PERSONA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_100i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/01-PERSONA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_100i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/01-PERSONA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_100i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/01-PERSONA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+
+#sq_101i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/02-MAIL.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_101i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/02-MAIL.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_101i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/02-MAIL.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_108i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/04-DOMICILIO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_108i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/04-DOMICILIO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_108i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/04-DOMICILIO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_110i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/04-DOMICILIO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_110i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/04-DOMICILIO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_110i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/04-DOMICILIO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+select {
+  font-size: 16px;
+  line-height: 1.42857143;
+  background-image: url("/images/05-FAMILIA.png") !important;
+  background-repeat: no-repeat;
+  background-position: -1% 20%;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+input[type="number"]#sq_109i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/05-FAMILIA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+select#sq_109i {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
+
+option#sq_109i {
+    background: transparent        url(http://www.clinicalflow.com/skins/common/icons/ed_ins_img.png)     no-repeat left center;
+    padding-left: 20px;
+    width: 200px;
+}
+input[type="number"]#sq_109i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/05-FAMILIA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+input[type="number"]#sq_109i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/05-FAMILIA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_111i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/05-FAMILIA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_111i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/05-FAMILIA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_111i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/05-FAMILIA.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_113i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_113i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_113i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+select#sq_114i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+select#sq_114i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+select#sq_114i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_115i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/07-INGRESOS.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_115i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/07-INGRESOS.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_115i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/07-INGRESOS.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_116i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_116i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_116i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_117i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_117i:-ms-input-placeholder{
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
+#sq_117i::-webkit-input-placeholder  {
+font-size: 16px;
+line-height: 1.42857143;
+background-image: url("/images/06-TRABAJO.png") !important;
+background-repeat: no-repeat;
+background-position: -1% 20%;
+color: #BDBDBD;
+font-weight: 400;
+}
 
 .form-group .form-control {
     margin-bottom: 7px;
     background-color: #fff;
+    font-family: "FontAwesome";
+    font-family: append($font-family-sans-serif, "FontAwesome", "comma");
 }
-.form-control{
-	background-color: #dce8d6;
-	border: 2px solid #dce8d6;
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-}
+
+
 .sv_complete_btn {
     background-color: #5b8f22;
     border-radius: 10px;
@@ -65,14 +426,7 @@ img {
     vertical-align: middle;
 
 }
-#sq_112i .select{
-     border: 1px solid #ccc;
- background: URL(/images/.png) no-repeat 298px 3px #fff !important;
- -moz-appearance: none;
- -webkit-appearance: none;
- appearance: none;
 
-}
 .panel-footer {
     background-color: none;
     border-bottom-left-radius: 3px;
@@ -131,10 +485,6 @@ img {
 .panel-body {
     margin-top: 50px;
 }
-.form-control {
-    color: #000;
-    font-size: 11px;
-}
 .panel-footer{
 	border: none;
 	background: none;
@@ -158,9 +508,9 @@ h5 span{
 textarea, input {
   padding:10px;
 	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
 
 .form-group {
@@ -170,14 +520,7 @@ textarea, input {
 #sq_100 {
 display: inline-block; vertical-align: top; width: 50%; padding-right: 20px;
 }
-#sq_100i input{
-    font-family: FontAwesome;
-   content: "\f007";
-   display: inline-block;
-   padding-right: 3px;
-   vertical-align: middle;
 
-}
 
 .panel-footer{
 

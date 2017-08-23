@@ -1,3 +1,6 @@
+
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -8,6 +11,7 @@ import $ from 'jquery';
 
 Survey.defaultBootstrapMaterialCss.navigationButton = "btn btn-green";
 Survey.Survey.cssType = "bootstrapmaterial";
+
 
 var surveyJSON = {
  locale: "es",
@@ -26,14 +30,14 @@ var surveyJSON = {
         {
          type: "text",
          name: "nombre",
-         placeHolder:"\uf007 Nombre",
+         placeHolder:"       Nombre",
          isRequired: true,
 
        },
        {
         type: "text",
         name: "email",
-        placeHolder: "\uf003 Email",
+        placeHolder: "       Email",
         startWithNewLine: false,
         title: {
          es: "Email"
@@ -43,7 +47,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "apellidos",
-         placeHolder: "\uf007 Apellidos",
+         placeHolder: "      Apellidos",
 
          title: {
           es: "Apellidos"
@@ -52,7 +56,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "telefono",
-         placeHolder: "\uf10b Teléfono",
+         placeHolder: "     Teléfono",
          startWithNewLine: false,
          title: {
           default: "Ingresa tu número de teléfono ",
@@ -73,7 +77,7 @@ var surveyJSON = {
           titleName: "descripcion"
          },
          name: "estado_civil",
-         optionsCaption: "\uf007 Estado Civil",
+         optionsCaption: "       Estado Civil",
          title: {
           es: ""
          }
@@ -92,7 +96,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "nombre_conyuge",
-         placeHolder: "Nombre conyuge",
+         placeHolder: "     Nombre conyuge",
          title: {
           es: "Nombre"
          }
@@ -100,7 +104,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "email_conyuge",
-         placeHolder: "Email conyuge",
+         placeHolder: "     Email conyuge",
          title: {
           es: "Email"
          },
@@ -109,7 +113,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "telefono_conyuge",
-         placeHolder: "Teléfono conyuge",
+         placeHolder: "     Teléfono conyuge",
          startWithNewLine: false,
          title: {
           es: "Teléfono:"
@@ -130,7 +134,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "residencia",
-         placeHolder: "Dirección",
+         placeHolder: "        Dirección",
          startWithNewLine: false,
          title: {
           es: "Dirección"
@@ -139,7 +143,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "adultos",
-         placeHolder: "\uf0c0 Adultos que integran la familia",
+         placeHolder: "     Adultos que integran la familia",
          startWithNewLine: false,
          title: {
           es: ""
@@ -149,7 +153,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "zona",
-         placeHolder: "Zona",
+         placeHolder: "       Zona",
 
          title: {
           es: "Zona"
@@ -159,7 +163,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "ninos",
-         placeHolder: "'\uf0c0 Niños que integran la familia",
+         placeHolder: "      Niños que integran la familia",
          startWithNewLine: false,
          title: {
           es: ""
@@ -179,7 +183,7 @@ var surveyJSON = {
           titleName: "descripcion"
          },
          name: "municipio",
-        optionsCaption: "Selecciona el municipio",
+        optionsCaption: "     Selecciona el municipio",
           title: {
           es: ""
          }
@@ -204,7 +208,7 @@ var surveyJSON = {
             "Gobierno"
            ],
            name: "sectorTrabajo",
-           optionsCaption: "\uf0f2 Sector",
+           optionsCaption: "     Sector",
            title: {
             es: ""
            }
@@ -216,7 +220,7 @@ var surveyJSON = {
             "Negocio Propio"
            ],
            name: "tipo_relacion",
-           optionsCaption: "\uf0f2 Tipo de relación laboral",
+           optionsCaption: "     Tipo de relación laboral",
            startWithNewLine: false,
            title: {
             es: ""
@@ -225,7 +229,7 @@ var surveyJSON = {
           {
            type: "text",
            name: "ingreso",
-           placeHolder: "\uf0d6 Ingresos mensuales",
+           placeHolder: "        Ingresos mensuales",
            title: {
             es: ""
            },
@@ -234,7 +238,7 @@ var surveyJSON = {
           {
            type: "text",
            name: "lugar_trabajo",
-           placeHolder: "\uf0f2 Lugar de trabajo",
+           placeHolder: "       Lugar de trabajo",
 
            startWithNewLine: false,
            title: {
@@ -254,7 +258,7 @@ var surveyJSON = {
             titleName: "descripcion"
            },
            name: "profesion",
-           optionsCaption: "\uf0f2 Profesión",
+           optionsCaption: "     Profesión",
            title: {
             es: ""
            }
@@ -284,7 +288,7 @@ var surveyJSON = {
         titleName: "descripcion"
        },
        name: "como_se_entero",
-       optionsCaption: "¿ Como se enteró ?",
+       optionsCaption: "     ¿ Como se enteró ?",
 
        title: {
         es: ""
@@ -299,7 +303,7 @@ var surveyJSON = {
        },
        isRequired: true,
        name: "proyecto",
-       optionsCaption: "Proyecto",
+       optionsCaption: "     Proyecto",
        startWithNewLine: false,
        title: "Proyecto"
       },
@@ -322,7 +326,7 @@ var surveyJSON = {
       {
        type: "comment",
        name: "observaciones",
-       placeHolder: "observaciones",
+       placeHolder: "     observaciones",
        startWithNewLine: false,
        title: {
         es: ""
