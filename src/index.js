@@ -143,7 +143,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "adultos",
-         placeHolder: "     Adultos que integran la familia",
+         placeHolder: "     Adultos",
          startWithNewLine: false,
          title: {
           es: ""
@@ -163,7 +163,7 @@ var surveyJSON = {
         {
          type: "text",
          name: "ninos",
-         placeHolder: "      Niños que integran la familia",
+         placeHolder: "      Niños",
          startWithNewLine: false,
          title: {
           es: ""
@@ -182,8 +182,8 @@ var surveyJSON = {
           valueName: "id_municipio",
           titleName: "descripcion"
          },
-         name: "municipio",
-        optionsCaption: "     Selecciona el municipio",
+         name: "Ciudad",
+        optionsCaption: "     Selecciona ciudad",
           title: {
           es: ""
          }
@@ -217,7 +217,9 @@ var surveyJSON = {
            type: "dropdown",
            choices: [
             "Dependiente",
-            "Negocio Propio"
+            "Negocio Propio",
+            "Privado",
+            "Gobierno"
            ],
            name: "tipo_relacion",
            optionsCaption: "     Tipo de relación laboral",
@@ -341,7 +343,7 @@ var surveyJSON = {
     },
 
      title: {
-      es: "Proyecto"
+      es: "Generales"
      }
     }
    ]
