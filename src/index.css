@@ -503,7 +503,7 @@ img {
 
 }
 h5 span{
-  visibility: hidden;
+  visibility: show;
 }
 textarea, input {
   padding:10px;
