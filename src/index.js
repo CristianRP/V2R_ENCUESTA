@@ -36,6 +36,58 @@ function sendDataToServer(survey) {
       mm='0'+mm;
   }
   var today = dd+'/'+mm+'/'+yyyy;
+  var prestigioDesarrolladora = 0;
+  var exclusividad = 0;
+  var ubicacion = 0;
+  var diseno = 0;
+  var seguridad = 0;
+  var amplitud = 0;
+  var areas_deportivas = 0;
+  var areas_sociales = 0;
+  var areas_verdes = 0;
+  var mascotas = 0;
+
+  if (typeof(answer["caracteristicas_importantes"]) !== "undefined") {
+    prestigioDesarrolladora = answer["caracteristicas_importantes"]["prestigioDesarrolladora"];
+    exclusividad = answer["caracteristicas_importantes"]["exclusividad"];
+    ubicacion = answer["caracteristicas_importantes"]["ubicacion"];
+    diseno = answer["caracteristicas_importantes"]["diseno"];
+    seguridad = answer["caracteristicas_importantes"]["seguridad"];
+    amplitud = answer["caracteristicas_importantes"]["amplitud"];
+    areas_deportivas = answer["caracteristicas_importantes"]["areas_deportivas"];
+    areas_sociales = answer["caracteristicas_importantes"]["areas_sociales"];
+    areas_verdes = answer["caracteristicas_importantes"]["areas_verdes"];
+    mascotas = answer["caracteristicas_importantes"]["mascotas"];
+  }
+
+  var motiva_cercania = 0;
+  var motiva_dejar_alquilar = 0;
+  var motiva_cambio_estilo_vida = 0;
+  var motiva_inversion = 0;
+  var motiva_seguridad = 0;
+  var motiva_mejor_ubicacion = 0;
+  var motiva_la_familia = 0;
+  var motiva_otros = "";
+  var motivo_conocer_proyecto = "";
+  var motivo_conocer_proyecto_otro = "";
+
+  if (typeof(answer["motivaAdquirir"]) !== "undefined") {
+    motiva_cercania = answer["motivaAdquirir"][0] != null ? 1 : 0;
+    motiva_dejar_alquilar = answer["motivaAdquirir"][1] != null ? 1 : 0;
+    motiva_cambio_estilo_vida = answer["motivaAdquirir"][2] != null ? 1 : 0;
+    motiva_inversion = answer["motivaAdquirir"][3] != null ? 1 : 0;
+    motiva_seguridad = answer["motivaAdquirir"][4] != null ? 1 : 0;
+    motiva_mejor_ubicacion = answer["motivaAdquirir"][5] != null ? 1 : 0;
+    motiva_la_familia = answer["motivaAdquirir"][6] != null ? 1 : 0;
+  }
+
+  if (typeof(answer["motivaAdquirir-Comment"]) !== "undefined"
+      && typeof(answer.motivacion) !== "undefined"
+      && typeof(answer["motivacion-Comment"]) !== "undefined") {
+    motiva_otros = answer["motivaAdquirir-Comment"];
+    motivo_conocer_proyecto = answer.motivacion;
+    motivo_conocer_proyecto_otro = answer["motivacion-Comment"]
+  }
 
     var self = this;
     $.ajax({
@@ -51,14 +103,14 @@ function sendDataToServer(survey) {
           telefono: answer.telefono,
           email: answer.email,
           zona: answer.zona,
-          id_municipio: answer.id_municipio,
+          id_municipio: answer.Ciudad,
           adultos_integran_familia: answer.adultos,
           ninos_integran_familia: answer.ninos,
           nombre_esposo: answer.nombre_conyuge,
           telefono_esposo: answer.telefono_conyuge,
           email_esposo: answer.telefono_conyuge,
           id_profesion: answer.profesion,
-          tipo_relacion: '',
+          tipo_relacion: answer.tipo_relacion,
           lugar_trabajo: answer.lugar_trabajo,
           sector_trabajo: answer.sectorTrabajo,
           id_ingreso: answer.ingreso,
@@ -70,38 +122,40 @@ function sendDataToServer(survey) {
           migrado_v2r: "1",
           apellidos: answer.apellidos,
           estado_civil: answer.estado_civil,
-          prestigio_desarrolladora: answer["caracteristicas_importantes"]["prestigioDesarrolladora"],
-          exclusividad_proyecto: answer["caracteristicas_importantes"]["exclusividad"],
-          ubicacion: answer["caracteristicas_importantes"]["ubicacion"],
-          diseno: answer["caracteristicas_importantes"]["diseno"],
-          seguridad: answer["caracteristicas_importantes"]["seguridad"],
-          amplitud: answer["caracteristicas_importantes"]["amplitud"],
-          areas_deportivas: answer["caracteristicas_importantes"]["areas_deportivas"],
-          areas_sociales: answer["caracteristicas_importantes"]["areas_sociales"],
-          areas_verdes: answer["caracteristicas_importantes"]["areas_verdes"],
-          amigable_mascotas: answer["caracteristicas_importantes"]["mascotas"],
+          prestigio_desarrolladora: prestigioDesarrolladora,
+          exclusividad_proyecto: exclusividad,
+          ubicacion: ubicacion,
+          diseno: diseno,
+          seguridad: seguridad,
+          amplitud: amplitud,
+          areas_deportivas: areas_deportivas,
+          areas_sociales: areas_sociales,
+          areas_verdes: areas_verdes,
+          amigable_mascotas: mascotas,
           referido_por: answer.referido,
           residenciales_visitados: answer.residencialesVisitado,
           su_vivienda_es: answer.tipoVivienda,
-          motiva_cercania: answer["motivaAdquirir"][0] != null ? 1 : 0,
-          motiva_dejar_alquilar: answer["motivaAdquirir"][1] != null ? 1 : 0,
-          motiva_cambio_estilo_vida: answer["motivaAdquirir"][2] != null ? 1 : 0,
-          motiva_inversion: answer["motivaAdquirir"][3] != null ? 1 : 0,
-          motiva_seguridad: answer["motivaAdquirir"][4] != null ? 1 : 0,
-          motiva_mejor_ubicacion: answer["motivaAdquirir"][5] != null ? 1 : 0,
-          motiva_la_familia: answer["motivaAdquirir"][6] != null ? 1 : 0,
-          motiva_otros: answer["motivaAdquirir-Comment"],
-          motivo_conocer_proyecto: answer.motivacion,
-          motivo_conocer_proyecto_otro: answer["motivacion-Comment"]
+          motiva_cercania: motiva_cercania,
+          motiva_dejar_alquilar: motiva_dejar_alquilar,
+          motiva_cambio_estilo_vida: motiva_cambio_estilo_vida,
+          motiva_inversion: motiva_inversion,
+          motiva_seguridad: motiva_seguridad,
+          motiva_mejor_ubicacion: motiva_mejor_ubicacion,
+          motiva_la_familia: motiva_la_familia,
+          motiva_otros: motiva_otros,
+          motivo_conocer_proyecto: motivo_conocer_proyecto,
+          motivo_conocer_proyecto_otro: motivo_conocer_proyecto_otro
         }
       },
       success: function(data) {
         /*self.props.handleAdd(data);
         self.setState(self.getInitialState);
         //alert("jeje");*/
+        //alert(JSON.stringify(survey.data));
         console.log("Ingresado con éxito!");
       },
       error: function(xhr, status, error) {
+        //alert(JSON.stringify(survey.data));
         alert('Cannot add a new record: ', error);
       }
     })
