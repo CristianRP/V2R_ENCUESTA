@@ -98,7 +98,7 @@ function sendDataToServer(survey) {
       data: {
         params: {
           cod_proyecto: answer.proyecto,
-          fecha:today,
+          fecha:answer.Fecha,
           vendedor: answer.vendedor,
           supervisor: 1,
           nombre: answer.nombre,
